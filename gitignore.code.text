@@ -1,0 +1,84 @@
+# ============================================
+# Taumaco Product System - Git Ignore
+# ============================================
+
+# ===== PHP =====
+/vendor/
+composer.lock
+composer.phar
+.env
+.env.local
+.env.*.local
+*.log
+*.cache
+
+# ===== Database =====
+*.sql.gz
+*.sql.zip
+/database/backups/*
+!/database/backups/.gitkeep
+
+# ===== Uploads & Storage =====
+/backend/uploads/*
+!/backend/uploads/.gitkeep
+/backend/storage/*
+!/backend/storage/.gitkeep
+/backend/cache/*
+!/backend/cache/.gitkeep
+/backend/logs/*
+!/backend/logs/.gitkeep
+
+# ===== IDE & Editors =====
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# ===== OS Files =====
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ===== Temporary Files =====
+/tmp/
+/temp/
+*.tmp
+*.bak
+*.backup
+*~
+
+# ===== Config Files (Sensitive) =====
+/backend/config/database.local.php
+/backend/config/app.local.php
+/backend/config/.env
+
+# ===== SSL Certificates =====
+*.pem
+*.key
+*.crt
+*.csr
+/ssl/
+
+# ===== Testing =====
+/coverage/
+/.phpunit.result.cache
+/tests/_output/
+
+# ===== Node Modules =====
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# ===== Build Files =====
+/frontend/dist/
+/frontend/build/
+
+# ===== Keep Empty Directories =====
+!.gitkeep
